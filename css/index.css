@@ -1,0 +1,161 @@
+.main {
+  background-image: url(../images/Shading.png);
+  width: 100%;
+  height: 100%;
+}
+.main .coupon {
+  width: 100%;
+  height: 164px;
+  margin-top: 38px;
+}
+.main .coupon ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .coupon ul li {
+  width: 372px;
+  height: 164px;
+  margin-right: 25px;
+}
+.main .flowerAdvice {
+  margin: 0 auto;
+  width: 90%;
+  height: 1490px;
+  margin-top: 70px;
+}
+.main .flowerAdvice .flowerAdviceTitle {
+  width: 100%;
+  height: 67px;
+  text-align: center;
+}
+.main .flowerAdvice .flowerAdviceContent {
+  margin: 0 auto;
+  width: 1250px;
+}
+.main .flowerAdvice .flowerAdviceContent ul {
+  width: 100%;
+  position: relative;
+}
+.main .flowerAdvice .flowerAdviceContent ul li {
+  position: absolute;
+  width: 300px;
+  height: 442px;
+  text-align: center;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(1) {
+  top: 128px;
+  left: 32px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(2) {
+  top: 29px;
+  left: 482px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(3) {
+  top: 128px;
+  right: 16px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) {
+  width: 530px;
+  height: 315px;
+  top: 506px;
+  left: 365px;
+  position: relative;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .left {
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .left img {
+  height: 315px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .right {
+  position: absolute;
+  right: 13px;
+  bottom: 97px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .right img {
+  height: 26px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(5) {
+  top: 758px;
+  left: 32px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(6) {
+  top: 858px;
+  left: 482px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li:nth-child(7) {
+  top: 758px;
+  right: 16px;
+}
+.main .flowerAdvice .flowerAdviceContent ul li .buyButton {
+  position: absolute;
+  bottom: 14px;
+  right: 22px;
+}
+.main .cakeGift {
+  margin: 0 auto;
+  width: 65%;
+  height: 1092px;
+}
+.main .cakeGift .cakeGiftTitle {
+  width: 100%;
+  height: 67px;
+  text-align: center;
+}
+.main .cakeGift .cakeGiftContent {
+  width: 100%;
+}
+.main .cakeGift .cakeGiftContent ul {
+  width: 100%;
+  position: relative;
+}
+.main .cakeGift .cakeGiftContent ul li {
+  position: absolute;
+  float: left;
+  width: 290px;
+  height: 442px;
+  text-align: center;
+  top: 33px;
+}
+.main .cakeGift .cakeGiftContent ul li a:nth-child(1) {
+  margin-top: 15px;
+  display: block;
+  height: 255px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(1) {
+  left: 27px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(2) {
+  left: 330px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(3) {
+  right: 313px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(4) {
+  right: 10px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(5) {
+  left: 27px;
+  top: 487px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(6) {
+  left: 330px;
+  top: 487px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(7) {
+  right: 313px;
+  top: 487px;
+}
+.main .cakeGift .cakeGiftContent ul li:nth-child(8) {
+  right: 10px;
+  top: 487px;
+}
+.main .cakeGift .cakeGiftContent ul li .cakeGiftButton {
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+}
