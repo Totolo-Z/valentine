@@ -1,12 +1,24 @@
+.banner {
+  width: 100%;
+  height: 770px;
+}
+.banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner a img {
+  width: 100%;
+  height: 100%;
+}
 .main {
-  background-image: url(../images/Shading.png);
+  background: url(../images/background.png) no-repeat center;
   width: 100%;
   height: 100%;
 }
 .main .coupon {
   width: 100%;
   height: 164px;
-  margin-top: 38px;
 }
 .main .coupon ul {
   width: 100%;
@@ -17,13 +29,12 @@
 .main .coupon ul li {
   width: 372px;
   height: 164px;
-  margin-right: 25px;
+  margin-right: 26px;
 }
 .main .flowerAdvice {
   margin: 0 auto;
-  width: 90%;
   height: 1490px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .main .flowerAdvice .flowerAdviceTitle {
   width: 100%;
@@ -31,131 +42,461 @@
   text-align: center;
 }
 .main .flowerAdvice .flowerAdviceContent {
-  margin: 0 auto;
-  width: 1250px;
-}
-.main .flowerAdvice .flowerAdviceContent ul {
   width: 100%;
+  margin-top: 40px;
   position: relative;
 }
-.main .flowerAdvice .flowerAdviceContent ul li {
-  position: absolute;
+.main .flowerAdvice .flowerAdviceContent li {
+  float: left;
   width: 300px;
   height: 442px;
+  background-color: #fff;
   text-align: center;
+  border-radius: 8px;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(1) {
-  top: 128px;
-  left: 32px;
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem {
+  width: 240px;
+  margin: 0 auto;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(2) {
-  top: 29px;
-  left: 482px;
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem h3 {
+  font-size: 28px;
+  color: #fb241f;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(3) {
-  top: 128px;
-  right: 16px;
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem p {
+  min-width: 240px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) {
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem .price {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  display: flex;
+}
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem .price .priceNum {
+  width: 148px;
+  height: 30px;
+  background-color: #fb241f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 15px;
+}
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem .price .priceNum i {
+  font-size: 25px;
+}
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem .price .priceBuy {
+  width: 92px;
+  height: 30px;
+  background-color: #c80b06;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.main .flowerAdvice .flowerAdviceContent li .flowerAdviceItem .price .priceBuy a {
+  line-height: 30px;
+  color: #fff;
+  font-size: 15px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(1) {
+  position: absolute;
+  top: 148px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 450px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(3) {
+  position: absolute;
+  top: 148px;
+  right: 0px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) {
+  position: absolute;
+  top: 527px;
+  left: 335px;
   width: 530px;
   height: 315px;
-  top: 506px;
-  left: 365px;
-  position: relative;
+  display: flex;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .left {
-  position: absolute;
-  left: 15px;
-  bottom: 0px;
-}
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .left img {
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceImg img {
   height: 315px;
+  vertical-align: middle;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .right {
-  position: absolute;
-  right: 13px;
-  bottom: 97px;
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem {
+  width: 206px;
+  height: 100px;
+  margin-top: 85px;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(4) .right img {
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem h3 {
+  font-size: 24px;
+  color: #fb241f;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem p {
+  min-width: 206px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem .price {
+  margin-top: 10px;
+  width: 100%;
   height: 26px;
+  color: #fff;
+  display: flex;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(5) {
-  top: 758px;
-  left: 32px;
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem .price .priceNum {
+  width: 120px;
+  height: 26px;
+  background-color: #fb241f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 12px;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(6) {
-  top: 858px;
-  left: 482px;
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem .price .priceNum i {
+  font-size: 20px;
 }
-.main .flowerAdvice .flowerAdviceContent ul li:nth-child(7) {
-  top: 758px;
-  right: 16px;
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem .price .priceBuy {
+  width: 86px;
+  height: 26px;
+  background-color: #c80b06;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
-.main .flowerAdvice .flowerAdviceContent ul li .buyButton {
+.main .flowerAdvice .flowerAdviceContent li:nth-child(4) .flowerAdviceItem .price .priceBuy a {
+  line-height: 26px;
+  color: #fff;
+  font-size: 12px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(5) {
   position: absolute;
-  bottom: 14px;
-  right: 22px;
+  top: 778px;
+  left: 0px;
 }
-.main .cakeGift {
+.main .flowerAdvice .flowerAdviceContent li:nth-child(6) {
+  position: absolute;
+  top: 878px;
+  left: 450px;
+}
+.main .flowerAdvice .flowerAdviceContent li:nth-child(7) {
+  position: absolute;
+  top: 778px;
+  right: 0px;
+}
+.main .cakeGift,
+.main .PlaceFlowers {
   margin: 0 auto;
-  width: 65%;
-  height: 1092px;
+  height: 1093px;
 }
-.main .cakeGift .cakeGiftTitle {
+.main .cakeGift .cakeGiftTitle,
+.main .PlaceFlowers .cakeGiftTitle {
   width: 100%;
   height: 67px;
   text-align: center;
 }
-.main .cakeGift .cakeGiftContent {
+.main .cakeGift .cakeGiftContent,
+.main .PlaceFlowers .cakeGiftContent {
   width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.main .cakeGift .cakeGiftContent ul {
-  width: 100%;
-  position: relative;
-}
-.main .cakeGift .cakeGiftContent ul li {
-  position: absolute;
-  float: left;
+.main .cakeGift .cakeGiftContent li,
+.main .PlaceFlowers .cakeGiftContent li {
   width: 290px;
   height: 442px;
+  background-color: #fff;
   text-align: center;
-  top: 33px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  border-radius: 8px;
 }
-.main .cakeGift .cakeGiftContent ul li a:nth-child(1) {
-  margin-top: 15px;
-  display: block;
-  height: 255px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem {
+  width: 245px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(1) {
-  left: 27px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem h3,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem h3 {
+  font-size: 24px;
+  color: #fb241f;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(2) {
-  left: 330px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem p,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem p {
+  min-width: 245px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(3) {
-  right: 313px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem .price,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem .price {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  display: flex;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(4) {
-  right: 10px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem .price .priceNum,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem .price .priceNum {
+  width: 148px;
+  height: 31px;
+  background-color: #fb241f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 15px;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(5) {
-  left: 27px;
-  top: 487px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem .price .priceNum i,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem .price .priceNum i {
+  font-size: 25px;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(6) {
-  left: 330px;
-  top: 487px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem .price .priceBuy,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem .price .priceBuy {
+  width: 92px;
+  height: 31px;
+  background-color: #c80b06;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(7) {
-  right: 313px;
-  top: 487px;
+.main .cakeGift .cakeGiftContent li .cakeGiftItem .price .priceBuy a,
+.main .PlaceFlowers .cakeGiftContent li .cakeGiftItem .price .priceBuy a {
+  line-height: 30px;
+  color: #fff;
+  font-size: 15px;
 }
-.main .cakeGift .cakeGiftContent ul li:nth-child(8) {
-  right: 10px;
-  top: 487px;
+.main .packing {
+  margin-top: 10px;
+  height: 1800px;
+  text-align: center;
 }
-.main .cakeGift .cakeGiftContent ul li .cakeGiftButton {
+.main .packing .packingContent {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+.main .packing .packingContent li {
+  background-color: #fff;
+  border-radius: 8px;
   position: absolute;
-  right: 16px;
-  bottom: 20px;
+}
+.main .packing .packingContent li:nth-child(1),
+.main .packing .packingContent li:nth-child(3),
+.main .packing .packingContent li:nth-child(5),
+.main .packing .packingContent li:nth-child(7),
+.main .packing .packingContent li:nth-child(9) {
+  width: 414px;
+  height: 479px;
+  padding-top: 45px;
+}
+.main .packing .packingContent li:nth-child(1) .packingImg,
+.main .packing .packingContent li:nth-child(3) .packingImg,
+.main .packing .packingContent li:nth-child(5) .packingImg,
+.main .packing .packingContent li:nth-child(7) .packingImg,
+.main .packing .packingContent li:nth-child(9) .packingImg {
+  display: flex;
+  justify-content: space-around;
+}
+.main .packing .packingContent li:nth-child(1) .packingImg span,
+.main .packing .packingContent li:nth-child(3) .packingImg span,
+.main .packing .packingContent li:nth-child(5) .packingImg span,
+.main .packing .packingContent li:nth-child(7) .packingImg span,
+.main .packing .packingContent li:nth-child(9) .packingImg span {
+  display: block;
+  width: 140px;
+  font-size: 15px;
+  color: #333;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem {
+  width: 100%;
+  margin-top: 40px;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem h3 {
+  font-size: 24px;
+  color: #fb241f;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem p {
+  min-width: 300px;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem .price {
+  margin-top: 30px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem .price .priceNum {
+  width: 148px;
+  height: 30px;
+  background-color: #fb241f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 15px;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem .price .priceNum i {
+  font-size: 25px;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem .price .priceBuy {
+  width: 92px;
+  height: 30px;
+  background-color: #c80b06;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 15px;
+}
+.main .packing .packingContent li:nth-child(1) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(3) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(5) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(7) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(9) .cakeGiftItem .price .priceBuy a {
+  line-height: 30px;
+  color: #fff;
+}
+.main .packing .packingContent li:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.main .packing .packingContent li:nth-child(2) {
+  top: 50px;
+  left: 437px;
+}
+.main .packing .packingContent li:nth-child(3) {
+  top: 0px;
+  right: 0px;
+}
+.main .packing .packingContent li:nth-child(4) {
+  top: 600px;
+  left: 0px;
+}
+.main .packing .packingContent li:nth-child(5) {
+  top: 555px;
+  left: 393px;
+}
+.main .packing .packingContent li:nth-child(6) {
+  top: 600px;
+  right: 0px;
+}
+.main .packing .packingContent li:nth-child(7) {
+  top: 1105px;
+  left: 0px;
+}
+.main .packing .packingContent li:nth-child(8) {
+  top: 1195px;
+  left: 437px;
+}
+.main .packing .packingContent li:nth-child(9) {
+  top: 1105px;
+  right: 0px;
+}
+.main .packing .packingContent li:nth-child(2),
+.main .packing .packingContent li:nth-child(4),
+.main .packing .packingContent li:nth-child(6),
+.main .packing .packingContent li:nth-child(8) {
+  width: 327px;
+  height: 374px;
+  padding-top: 30px;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem {
+  width: 100%;
+  margin-top: 40px;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem h3,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem h3 {
+  font-size: 24px;
+  color: #fb241f;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem p,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem p {
+  min-width: 300px;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem .price,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem .price {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem .price .priceNum,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem .price .priceNum {
+  width: 148px;
+  height: 30px;
+  background-color: #fb241f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 15px;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem .price .priceNum i,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem .price .priceNum i {
+  font-size: 25px;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem .price .priceBuy,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem .price .priceBuy {
+  width: 92px;
+  height: 30px;
+  background-color: #c80b06;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 15px;
+}
+.main .packing .packingContent li:nth-child(2) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(4) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(6) .cakeGiftItem .price .priceBuy a,
+.main .packing .packingContent li:nth-child(8) .cakeGiftItem .price .priceBuy a {
+  line-height: 30px;
+  color: #fff;
 }
