@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bable.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <title>花蝴蝶情人节</title>
 </head>
 
 <body>
-     <!-- banner图 -->
-        <div class="banner">
-            <a href="#">
+    <!-- banner图 -->
+    <div class="banner">
+        <a href="#">
                  <img src="./images/banner.png"> 
             </a>
-        </div>
+    </div>
     <div class="main">
         <!-- 优惠券 -->
         <div class="coupon w">
@@ -372,7 +373,7 @@
                         </div>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <img src="./images/4-4-2.png">
                     </a>
@@ -385,7 +386,7 @@
                         </div>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <img src="./images/4-4-3.png">
                     </a>
@@ -445,7 +446,7 @@
                         </div>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <img src="./images/4-4-7.png">
                     </a>
@@ -462,7 +463,7 @@
                         </div>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <img src="./images/4-4-8.png">
                     </a>
@@ -475,7 +476,7 @@
                         </div>
                     </div>
                 </li>
-                  <li>
+                <li>
                     <a href="#">
                         <img src="./images/4-4-9.png">
                     </a>
@@ -495,6 +496,43 @@
             </ul>
         </div>
     </div>
+      <div id="mask" class="mask"></div>
+        <div class="dialog">
+            <a href="javascript:void(0)" class="close">
+                <img src="./images/Red-envelopes.png">
+            </a>
+        </div>
+        <div class="redbag">
+            <a href="#">
+                <img src="./images/Receive.png">
+            </a>
+        </div>
 </body>
+<script type="text/javascript">
+ $(function () {
+              $('.dialog').find('a.close').bind("click", function () {
+                  Dialog.close();
+              });
+         });
+  
+          var Dialog = {
+             mask: $('.mask'),
+             dialog: $('.dialog'),
+             content: $('.dialog-content'),
+             open: function (width, height, appendHtml) {
+                 Dialog.mask.fadeIn(500);
+                 Dialog.dialog.css({ width: width, height: (height + 22), marginLeft: -(parseInt(width) / 2) }).addClass('loading').fadeIn(500, function () {
+                     Dialog.dialog.removeClass('loading');
+                     Dialog.content.append(appendHtml);
+                 });
+             },
+             close: function () {
+                 Dialog.mask.fadeOut(500);
+                 Dialog.dialog.fadeOut(500, function () {
+                     Dialog.content.empty();
+                 });
+             }
+         }
+</script>
 
 </html>
