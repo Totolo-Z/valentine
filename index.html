@@ -496,43 +496,68 @@
             </ul>
         </div>
     </div>
-      <div id="mask" class="mask"></div>
-        <div class="dialog">
-            <a href="javascript:void(0)" class="close">
+    <div id="mask" class="mask"></div>
+    <div class="dialog">
+        <a href="javascript:void(0)" class="close">
                 <img src="./images/Red-envelopes.png">
-            </a>
-        </div>
-        <div class="redbag">
-            <a href="#">
+        </a>
+    </div>
+    <div class="fork">
+        <img src="./images/Close.png">
+    </div>
+    <div class="redbag">
                 <img src="./images/Receive.png">
-            </a>
-        </div>
+                 <span class="moneyNumber"><i>5</i>元</span>
+                <span class="thanks">
+                    <p>恭喜您得到5元红包</p> 
+                     感谢您对花蝴蝶的支持
+                </span>
+    </div>
 </body>
 <script type="text/javascript">
- $(function () {
-              $('.dialog').find('a.close').bind("click", function () {
-                  Dialog.close();
-              });
-         });
-  
-          var Dialog = {
-             mask: $('.mask'),
-             dialog: $('.dialog'),
-             content: $('.dialog-content'),
-             open: function (width, height, appendHtml) {
-                 Dialog.mask.fadeIn(500);
-                 Dialog.dialog.css({ width: width, height: (height + 22), marginLeft: -(parseInt(width) / 2) }).addClass('loading').fadeIn(500, function () {
-                     Dialog.dialog.removeClass('loading');
-                     Dialog.content.append(appendHtml);
-                 });
-             },
-             close: function () {
-                 Dialog.mask.fadeOut(500);
-                 Dialog.dialog.fadeOut(500, function () {
-                     Dialog.content.empty();
-                 });
-             }
-         }
+    $(function () {
+        $('.dialog').find('a.close').bind("click", function () {
+            Dialog.over();
+        });
+       $('.fork').bind("click",function(){
+           Dialog.forked();
+       })
+        $('.redbag').bind("click", function () {
+            Dialog.close();
+        });
+    });
+
+    var Dialog = {
+        mask: $('.mask'),
+        dialog: $('.dialog'),
+        fork:$('.fork'),
+        redbag: $('.redbag'),
+        open: function (width, height, appendHtml) {
+            Dialog.mask.fadeIn(500);
+            Dialog.dialog.css({ width: width, height: (height + 22), marginLeft: -(parseInt(width) / 2) }).addClass('loading').fadeIn(500, function () {
+                Dialog.dialog.removeClass('loading');
+            });
+        },
+        over: function (width, height, appendHtml) {
+            Dialog.dialog.fadeOut(500);
+            Dialog.redbag.css({ width: width, height: (height + 22), marginLeft: -(parseInt(width) / 2) }).addClass('loading').fadeIn(500, function () {
+                Dialog.dialog.removeClass('loading');
+            });
+        },
+       forked: function () {
+            Dialog.dialog.fadeOut(500);
+            Dialog.mask.fadeOut(500);
+            Dialog.redbag.fadeOut(500);
+            Dialog.fork.fadeOut(500);
+        },
+        close: function () {
+            Dialog.mask.fadeOut(500);
+            Dialog.redbag.fadeOut(500);
+            Dialog.fork.fadeOut(500);
+        },
+    }
+     
+
 </script>
 
 </html>
